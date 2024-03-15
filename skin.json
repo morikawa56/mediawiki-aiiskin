@@ -1,0 +1,83 @@
+{
+	"name": "AiiSkin",
+	"version": "0.0.1-beta",
+	"author": [
+		"[https://gitee.com/morikawa56 Aii-kisaraki]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:AiiSkin",
+	"descriptionmsg": "aiiskin-skin-desc",
+	"namemsg": "skinname-aiiskin",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.41.0"
+	},
+	"ValidSkinNames": {
+		"aiiskin": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "aiiskin",
+					"responsive": true,
+					"toc": true,
+					"messages": [
+						"aiiskin-no-categories",
+						"otherlanguages",
+						"sitetitle",
+						"search",
+						"tagline"
+					],
+					"styles": [
+						"codex-styles",
+						"skins.aiiskin.styles"
+					],
+					"scripts": [
+						"skins.aiiskin"
+					]
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"AiiSkin": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.aiiskin.styles": {
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
+			"features": {
+				"normalize": true,
+				"elements": true,
+				"content-tables": true,
+				"content-links": true,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": true,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/skin.less"
+			]
+		},
+		"skins.aiiskin": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "AiiSkin"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
+}

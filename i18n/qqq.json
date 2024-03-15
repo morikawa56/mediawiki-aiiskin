@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"..."
+		]
+	},
+	"skinname-aiiskin": "{{optional}}",
+	"aiiskin-skin-desc": "{{desc|what=skin|name=AiiSkin|url=https://www.mediawiki.org/wiki/Skin:AiiSkin}}",
+	"aiiskin-no-categories": "Message to show when no categories available"
+}

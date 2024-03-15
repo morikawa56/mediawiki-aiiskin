@@ -1,0 +1,1 @@
+/* JavaScript for the AiiSkin skin */
