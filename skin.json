@@ -9,14 +9,19 @@
 	"namemsg": "skinname-aiiskin",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.41.0"
+		"MediaWiki": ">= 1.38.0"
+	},
+	"license-name": "GPL-2.0-or-later",
+	"AutoloadClasses": {
+		"SkinAii": "SkinAii.php"
 	},
 	"ValidSkinNames": {
 		"aiiskin": {
-			"class": "SkinMustache",
+			"class": "SkinAii",
 			"args": [
 				{
 					"name": "aiiskin",
+					"templateDirectory": "templates",
 					"responsive": true,
 					"toc": true,
 					"messages": [
@@ -28,6 +33,8 @@
 					],
 					"styles": [
 						"codex-styles",
+						"mediawiki.ui.icon",
+						"mediawiki.ui.button",
 						"skins.aiiskin.styles"
 					],
 					"scripts": [
@@ -37,6 +44,14 @@
 			]
 		}
 	},
+	"ConfigRegistry": {
+		"aiiskin": "GlobalVarConfig::newInstance"
+	},
+	"config": {
+		"AiiSkinSearchApi": {
+			"value": false
+		}
+	},
 	"MessagesDirs": {
 		"AiiSkin": [
 			"i18n"
@@ -44,7 +59,7 @@
 	},
 	"ResourceModules": {
 		"skins.aiiskin.styles": {
-			"class": "MediaWiki\\ResourceLoader\\SkinModule",
+			"class": "ResourceLoaderSkinModule",
 			"features": {
 				"normalize": true,
 				"elements": true,
@@ -69,6 +84,8 @@
 				"desktop",
 				"mobile"
 			],
+			"dependencies": [ "vue", "wvui" ],
+			"es6": true,
 			"packageFiles": [
 				"resources/skin.js"
 			]
