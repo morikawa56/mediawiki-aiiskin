@@ -88,7 +88,8 @@
 			"dependencies": [ "vue", "wvui" ],
 			"es6": true,
 			"packageFiles": [
-				"resources/skin.js"
+				"resources/skin.js",
+				"resources/App.vue"
 			]
 		},
 		"elementui.utils": {
