@@ -13,7 +13,7 @@
 </template>
 
 <script>
-    export default {
+    module.exports = {
         name: 'App',
         data() {
             return {
