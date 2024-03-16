@@ -23,7 +23,6 @@
 					"name": "aiiskin",
 					"templateDirectory": "templates",
 					"responsive": true,
-					"toc": true,
 					"messages": [
 						"aiiskin-no-categories",
 						"otherlanguages",
@@ -38,8 +37,7 @@
 						"skins.aiiskin.styles"
 					],
 					"scripts": [
-						"skins.aiiskin",
-						"elementui.utils"
+						"skins.aiiskin"
 					]
 				}
 			]
@@ -90,17 +88,6 @@
 			"packageFiles": [
 				"resources/skin.js",
 				"resources/App.vue"
-			]
-		},
-		"elementui.utils": {
-			"targets": [
-				"desktop",
-				"mobile"
-			],
-			"es6": true,
-			"packageFiles": [
-				"utils/element-ui/index.js",
-				"utils/element-ui/index.css"
 			]
 		}
 	},
