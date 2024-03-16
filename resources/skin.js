@@ -4,12 +4,17 @@ $( function () {
 	const Vue = require( 'vue' );
 	const App = require( './App.vue' );
 	const appEl = document.getElementById( 'app' );
-    console.log( 111 );
+
 	// Only enhance to Vue if browser support is good enough
 	if ( typeof fetch !== 'undefined' && typeof Object.assign !== 'undefined' ) {
 		// eslint-disable-next-line no-new
-		new Vue({
+		new Vue( {
 			el: appEl,
+			/**
+			 *
+			 * @param {Function} createElement
+			 * @return {Vue.VNode}
+			 */
 			render: function ( createElement ) {
 				return createElement( App, {
 					props: {
