@@ -64,7 +64,7 @@
 			"class": "ResourceLoaderSkinModule",
 			"features": {
 				"normalize": true,
-				"content-thumbnails": true,
+				"content-media": true,
 				"content-tables": true,
 				"content-links": true,
 				"interface-category": true,
