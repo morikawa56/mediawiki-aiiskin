@@ -5,7 +5,7 @@ $(
         const App = require( './App.vue' );
         const appEl = document.getElementById( 'app' );
         Vue.use(ElementUI);
-        console.log(111);
+        console.log('helloworld');
         if ( typeof fetch !== 'undefined' && typeof Object.assign !== 'undefined' ) {
             // eslint-disable-next-line no-new
             new Vue( {
