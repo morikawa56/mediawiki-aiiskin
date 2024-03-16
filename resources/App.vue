@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    {{ test }}
+    {{ test }} : {{ msg }}
+    <br/>
     <el-row>
         <el-button>默认按钮</el-button>
         <el-button type="primary">主要按钮</el-button>
@@ -17,7 +18,8 @@
         name: 'App',
         data() {
             return {
-                test: 1
+                test: 1,
+                msg: 'Welcome to Your Vue.js App'
             }
         },
         components: {
