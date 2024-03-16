@@ -8,7 +8,7 @@ $( function () {
 	// Only enhance to Vue if browser support is good enough
 	if ( typeof fetch !== 'undefined' && typeof Object.assign !== 'undefined' ) {
 		// eslint-disable-next-line no-new
-		Vue.createMwApp({
+		new Vue({
 			el: appEl,
 			render: function ( createElement ) {
 				return createElement( App, {
