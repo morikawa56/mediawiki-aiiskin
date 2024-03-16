@@ -2,7 +2,7 @@
 $( function () {
 	/* scripts can go here */
 	const Vue = require( 'vue' );
-    const ElmentUI = require( '../utils/element-ui/index.js' );
+    const ElementUI = require( '../utils/element-ui/index.js' );
 	const App = require( './App.vue' );
 	const appEl = document.getElementById( 'app' );
     console.log( 111 );
@@ -12,11 +12,6 @@ $( function () {
 		// eslint-disable-next-line no-new
 		Vue.createMwApp({
 			el: appEl,
-			/**
-			 *
-			 * @param {Function} createElement
-			 * @return {Vue.VNode}
-			 */
 			render: function ( createElement ) {
 				return createElement( App, {
 					props: {
