@@ -9,7 +9,6 @@
         <el-button type="warning">警告按钮</el-button>
         <el-button type="danger">危险按钮</el-button>
     </el-row>
-    <script src="../utils/element-ui/lib/index.js"></script>
   </div>
 </template>
 
