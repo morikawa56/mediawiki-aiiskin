@@ -25,11 +25,11 @@
         components: {
 
         },
-        // mounted() {
-        //     console.log('mounted')
-        //     console.log(this);
-        //     debugger;
-        // },
+        mounted() {
+            console.log('mounted')
+            console.log(this);
+            debugger;
+        },
     }
 </script>
 
