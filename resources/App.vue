@@ -28,11 +28,10 @@
         mounted() {
             console.log('mounted')
             console.log(this);
-            debugger;
         },
     }
 </script>
 
 <style>
-
+    @import url('./element-ui.css');
 </style>
