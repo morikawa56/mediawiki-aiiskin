@@ -1,6 +1,6 @@
 /* JavaScript for the AiiSkin skin */
 import ElementUI from '../utils/element-ui/index.js';
-import 'element-ui/lib/theme-chalk/index.css';
+import '../utils/element-ui/index.css';
 $(
     function () {
         const App = require( './App.vue' );
