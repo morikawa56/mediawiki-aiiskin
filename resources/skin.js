@@ -15,14 +15,7 @@ $( function () {
 			 * @param {Function} createElement
 			 * @return {Vue.VNode}
 			 */
-			render: function ( createElement ) {
-				console.log( 'aaa' );
-				return createElement( App, {
-					props: {
-						initialData: JSON.parse( appEl.dataset.json )
-					}
-				} );
-			}
+			render: h => h(App)
 		} );
 	}
 } );
