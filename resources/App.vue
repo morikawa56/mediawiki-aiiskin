@@ -9,7 +9,7 @@
         <el-button type="warning">警告按钮</el-button>
         <el-button type="danger">危险按钮</el-button>
     </el-row>
-    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="../utils/element-ui/lib/index.js"></script>
   </div>
 </template>
 
@@ -28,5 +28,5 @@
 </script>
 
 <style>
-    @import url('../utils/element-ui/index.css');
+    @import url('../utils/element-ui/lib/theme-chalk/index.css');
 </style>
