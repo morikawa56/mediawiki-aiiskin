@@ -15,6 +15,9 @@
 	"AutoloadClasses": {
 		"SkinAii": "SkinAii.php"
 	},
+	"Hooks": {
+		"SkinTemplateNavigation::Universal": "SkinAlexandria::onSkinTemplateNavigation"
+	},
 	"ValidSkinNames": {
 		"aiiskin": {
 			"class": "SkinAii",
