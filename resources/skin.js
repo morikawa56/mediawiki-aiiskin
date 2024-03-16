@@ -7,9 +7,18 @@ $(
         const appEl = document.getElementById( 'app' );
         Vue.use(ElementUI);
         console.log(111);
-        new Vue({
-            el: appEl,
-            render: h => h(App)
-        });
+        if ( typeof fetch !== 'undefined' && typeof Object.assign !== 'undefined' ) {
+            // eslint-disable-next-line no-new
+            new Vue( {
+                el: appEl,
+                render: function ( createElement ) {
+                    return createElement( App, {
+                        props: {
+                            initialData: JSON.parse( appEl.dataset.json )
+                        }
+                    } );
+                }
+            } );
+        }
     }
 );
