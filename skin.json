@@ -64,7 +64,7 @@
 			"class": "ResourceLoaderSkinModule",
 			"features": {
 				"normalize": true,
-				"content-thumbnails": true,
+				"content-media": true,
 				"content-tables": true,
 				"content-links": true,
 				"interface-category": true,
@@ -75,7 +75,8 @@
 				"mobile"
 			],
 			"styles": [
-				"resources/skin.less"
+				"resources/skin.less",
+				"resources/element-ui.css"
 			]
 		},
 		"skins.aiiskin": {
@@ -87,7 +88,8 @@
 			"es6": true,
 			"packageFiles": [
 				"resources/skin.js",
-				"resources/App.vue"
+				"resources/App.vue",
+				"resources/element-ui.js"
 			]
 		}
 	},
