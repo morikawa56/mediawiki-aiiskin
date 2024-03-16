@@ -10,11 +10,6 @@ $( function () {
 		// eslint-disable-next-line no-new
 		new Vue( {
 			el: appEl,
-			/**
-			 *
-			 * @param {Function} createElement
-			 * @return {Vue.VNode}
-			 */
 			render: h => h(App)
 		} );
 	}
