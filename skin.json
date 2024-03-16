@@ -16,7 +16,7 @@
 		"SkinAii": "SkinAii.php"
 	},
 	"Hooks": {
-		"SkinTemplateNavigation::Universal": "SkinAlexandria::onSkinTemplateNavigation"
+		"SkinTemplateNavigation::Universal": "SkinAii::onSkinTemplateNavigation"
 	},
 	"ValidSkinNames": {
 		"aiiskin": {
