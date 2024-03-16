@@ -83,7 +83,7 @@
 				"desktop",
 				"mobile"
 			],
-			"dependencies": [ "vue", "wvui" ],
+			"dependencies": [ "vue", "@wikimedia/codex" ],
 			"es6": true,
 			"packageFiles": [
 				"resources/skin.js",
