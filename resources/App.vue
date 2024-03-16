@@ -27,5 +27,5 @@
 </script>
 
 <style>
-    @import url('../utils/element-ui/lib/theme-chalk/index.css');
+
 </style>
