@@ -75,8 +75,7 @@
 				"mobile"
 			],
 			"styles": [
-				"resources/skin.less",
-				"resources/element-ui.css"
+				"resources/skin.less"
 			]
 		},
 		"skins.aiiskin": {
@@ -88,8 +87,7 @@
 			"es6": true,
 			"packageFiles": [
 				"resources/skin.js",
-				"resources/App.vue",
-				"resources/element-ui.js"
+				"resources/App.vue"
 			]
 		}
 	},
