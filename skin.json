@@ -38,7 +38,8 @@
 						"skins.aiiskin.styles"
 					],
 					"scripts": [
-						"skins.aiiskin"
+						"skins.aiiskin",
+						"elementui.utils"
 					]
 				}
 			]
@@ -88,6 +89,17 @@
 			"es6": true,
 			"packageFiles": [
 				"resources/skin.js"
+			]
+		},
+		"elementui.utils": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"es6": true,
+			"packageFiles": [
+				"utils/element-ui/index.js",
+				"utils/element-ui/index.css"
 			]
 		}
 	},
