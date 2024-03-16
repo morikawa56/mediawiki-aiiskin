@@ -1,8 +1,7 @@
 /* JavaScript for the AiiSkin skin */
-import ElementUI from '../utils/element-ui/index.js';
-import '../utils/element-ui/index.css';
 $(
     function () {
+        const ElementUI = require( '../utils/element-ui/index.js' );
         const App = require( './App.vue' );
         const appEl = document.getElementById( 'app' );
         Vue.use(ElementUI);
