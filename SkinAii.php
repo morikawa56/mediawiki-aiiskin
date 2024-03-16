@@ -32,7 +32,7 @@ class SkinAii extends SkinMustache {
 
     protected function getJsConfigVars() : array {
         return [
-            'wgAiiskinSearchApi' => $this->getConfig()->get( 'AiiskinSearchApi' )
+            'wgAiiSkinSearchApi' => $this->getConfig()->get( 'AiiSkinSearchApi' )
         ];
     }
 
