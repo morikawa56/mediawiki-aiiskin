@@ -27,6 +27,7 @@
 					"templateDirectory": "templates",
 					"responsive": true,
 					"messages": [
+						"tooltip-search",
 						"aiiskin-no-categories",
 						"otherlanguages",
 						"sitetitle",
@@ -76,7 +77,8 @@
 			],
 			"styles": [
 				"resources/skin.less",
-				"resources/element-ui.css"
+				"resources/utils/buefy/buefy.min.css",
+				"resources/utils/buefy/all.css"
 			]
 		},
 		"skins.aiiskin": {
@@ -89,7 +91,9 @@
 			"packageFiles": [
 				"resources/skin.js",
 				"resources/App.vue",
-				"resources/element-ui.js"
+				"resources/AiiHeader.vue",
+				"resources/utils/dataHandle.js",
+				"resources/utils/buefy/buefy.min.js"
 			]
 		}
 	},
