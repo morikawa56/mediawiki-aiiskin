@@ -1,37 +1,43 @@
 <template>
-  <div id="app">
-    {{ test }} : {{ msg }}
-    <br/>
-    <el-row>
-        <el-button>默认按钮</el-button>
-        <el-button type="primary">主要按钮</el-button>
-        <el-button type="success">成功按钮</el-button>
-        <el-button type="info">信息按钮</el-button>
-        <el-button type="warning">警告按钮</el-button>
-        <el-button type="danger">危险按钮</el-button>
-    </el-row>
+  <div id="page">
+    <aii-header
+        :logo-width="aiiskinDataWordmark.width"
+        :logo-height="aiiskinDataWordmark.height"
+        :logo-src="aiiskinDataWordmark.src"
+        :tagline="msgTagline"
+        :mainpage="linkMainpage"
+        :form-action="dataSearchBox.formAction"
+        :sitetitle="msgSitetitle"
+        :placeholder="msgTooltipSearch"
+        :buttonLabel="msgSearch"
+        :searchsuggest-text="msgSearchsuggestContaining"
+        :html-user-menu="dataPortlets.dataUserMenu"
+        :menu-sidebar="dataPortletsSidebar"
+    ></aii-header>
   </div>
 </template>
 
 <script>
+    const { mapAllKeysRecursive } = require("./utils/dataHandle.js");
+    const AiiHeader = require("./AiiHeader.vue")
     module.exports = {
         name: 'App',
+        props: [ 'initialData' ],
         data() {
-            return {
-                test: 1,
-                msg: 'Welcome to Your Vue.js App'
-            }
+            return mapAllKeysRecursive( this.initialData );
         },
         components: {
-
+            AiiHeader
         },
         mounted() {
-            console.log('mounted')
-            console.log(this);
+            console.log('mounted');
+            console.log(this.initialData);
         },
     }
 </script>
 
 <style>
-    @import url('./element-ui.css');
+    @import url('./utils/buefy/buefy.min.css');
+    @import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+    @import url('https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css');
 </style>
