@@ -16,7 +16,10 @@
         :menu-sidebar="dataPortletsSidebar"
     ></aii-header>
     <aii-page
-        :class="appClass"></aii-page>
+        :class="appClass"
+        :html-title-heading="htmlTitleHeading"
+        :html-body-content="htmlBodyContent"
+        :html-categories="htmlCategories"></aii-page>
   </div>
 </template>
 
