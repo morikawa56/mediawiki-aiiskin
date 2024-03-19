@@ -11,15 +11,19 @@
         :placeholder="msgTooltipSearch"
         :buttonLabel="msgSearch"
         :searchsuggest-text="msgSearchsuggestContaining"
+        :searchpage-title="dataSearchBox.pageTitle"
         :html-user-menu="dataPortlets.dataUserMenu"
         :menu-sidebar="dataPortletsSidebar"
     ></aii-header>
+    <aii-page
+        :class="appClass"></aii-page>
   </div>
 </template>
 
 <script>
     const { mapAllKeysRecursive } = require("./utils/dataHandle.js");
     const AiiHeader = require("./AiiHeader.vue")
+    const AiiPage = require("./AiiPage.vue")
     module.exports = {
         name: 'App',
         props: [ 'initialData' ],
@@ -27,7 +31,8 @@
             return mapAllKeysRecursive( this.initialData );
         },
         components: {
-            AiiHeader
+            AiiHeader,
+            AiiPage
         },
         mounted() {
             console.log('mounted');
@@ -40,4 +45,5 @@
     @import url('./utils/buefy/buefy.min.css');
     @import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
     @import url('https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css');
+    @import url('./skin.css');
 </style>

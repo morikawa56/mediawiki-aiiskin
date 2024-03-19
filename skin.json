@@ -28,6 +28,7 @@
 					"responsive": true,
 					"messages": [
 						"tooltip-search",
+						"searchsuggest-containing",
 						"aiiskin-no-categories",
 						"otherlanguages",
 						"sitetitle",
@@ -76,9 +77,7 @@
 				"mobile"
 			],
 			"styles": [
-				"resources/skin.less",
-				"resources/utils/buefy/buefy.min.css",
-				"resources/utils/buefy/all.css"
+				"resources/skin.less"
 			]
 		},
 		"skins.aiiskin": {
@@ -92,8 +91,10 @@
 				"resources/skin.js",
 				"resources/App.vue",
 				"resources/AiiHeader.vue",
+				"resources/AiiPage.vue",
 				"resources/utils/dataHandle.js",
-				"resources/utils/buefy/buefy.min.js"
+				"resources/utils/buefy/buefy.min.js",
+				"resources/utils/searchHandle.js"
 			]
 		}
 	},
